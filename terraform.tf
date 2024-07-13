@@ -125,7 +125,7 @@ resource "aws_eip" "proj-eip" {
 
 
 # Creating an ubuntu EC2 instance
-resource "aws_instance" "test-Server" {
+resource "aws_instance" "Prod-Server" {
  ami = "ami-0c2af51e265bd5e0e"
  instance_type = "t2.medium"
  availability_zone = "ap-south-1"
@@ -139,6 +139,6 @@ resource "aws_instance" "test-Server" {
      sudo apt-get update -y
  EOF
  tags = {
- Name = "test-Server"
+ Name = "Prod-Server"
  }
 }
