@@ -14,7 +14,7 @@ provider "aws" {
 
 # Create an EC2 instance
 resource "aws_instance" "Test-Server" {
-  ami               = "ami-0c2af51e265bd5e0e"  # Ubuntu AMI ID for us-east-1
+  ami               = "ami-0ad21ae1d0696ad58"  # Ubuntu AMI ID for us-east-1
   instance_type     = "t2.micro"
   availability_zone = "ap-south-1"
   key_name          = "Banking-app"  # Replace with your actual key pair name
