@@ -9,14 +9,14 @@ terraform {
 
 # Configure the AWS provider
 provider "aws" {
-  region = "ap-south-1"
+  region = "ap-south-1b"
 }
 
 # Create an EC2 instance
 resource "aws_instance" "Test-Server" {
   ami               = "ami-0ad21ae1d0696ad58"  # Ubuntu AMI ID for us-east-1
   instance_type     = "t2.micro"
-  availability_zone = "ap-south-1"
+  availability_zone = "ap-south-1b"
   key_name          = "Banking-app"  # Replace with your actual key pair name
 
   vpc_security_group_ids = ["sg-09b21d30c0eea4629"]  # Security Group ID
